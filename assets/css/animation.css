@@ -1,0 +1,15 @@
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  border: 2px solid black;
+  /*border-color: var(--bs-primary);*/
+}
+

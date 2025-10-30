@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Nasalization';
+	src: url(../../assets/fonts/Nasalization-def5b08ab408e59c7f7c5805fea2df9b.woff2) format('woff2'),
+	url(../../assets/fonts/Nasalization-9d565c5393ddd6cbed1b5e1697e8a903.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

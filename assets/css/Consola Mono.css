@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Consola Mono';
+	src: url(../../assets/fonts/Consola%20Mono-9e49db75b655965098b3df4caab3ee80.woff2) format('woff2'),
+	url(../../assets/fonts/Consola%20Mono-6200ffdca4db399087a10bb6c378b5b1.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Consola Mono';
+	src: url(../../assets/fonts/Consola%20Mono-92d0369f53205e543e0dbd96ae47f2f0.woff2) format('woff2'),
+	url(../../assets/fonts/Consola%20Mono-af1b905e2faae8dfe13c776159a65add.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

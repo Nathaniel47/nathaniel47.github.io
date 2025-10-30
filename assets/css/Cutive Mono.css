@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Cutive Mono';
+	src: url(../../assets/fonts/Cutive%20Mono-5b1134c48667ede6d2a0b94a96ab7319.woff2) format('woff2'),
+	url(../../assets/fonts/Cutive%20Mono-f52535c54832440fb56b9242d7aa6099.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

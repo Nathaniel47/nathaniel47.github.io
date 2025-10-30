@@ -1,0 +1,14 @@
+.hover-card {
+  /*transition: all 0.3s ease;*/
+  background-color: #ffffff;
+}
+
+.hover-card:hover {
+  /*transform: translateY(-5px);*/
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid var(--bs-black) !important;
+  /*border-color: black;*/
+  /*border-width: medium;*/
+  background-color: #f8fafc;
+}
+

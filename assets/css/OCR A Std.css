@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'OCR A Std';
+	src: url(../../assets/fonts/OCR%20A%20Std-f3f0fe82e81ac8971e2ab225447798f4.woff2) format('woff2'),
+	url(../../assets/fonts/OCR%20A%20Std-aa11557c83cbd37a761b9376db42e60b.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
