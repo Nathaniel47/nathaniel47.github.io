@@ -23,29 +23,30 @@
     <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
     <link rel="stylesheet" href="assets/css/hoverEffect.css">
+    <link rel="stylesheet" href="assets/css/overflowSafety.css">
 <link rel="icon" href="assets/img/A.png" type="image/png"><link rel="icon" href="A.png" type="image/png">
 </head>
 
-<body style="background: #ffffff;overflow: auto;cursor: copy;" data-bs-spy="scroll">
-    <div class="d-flex justify-content-center" style="position: relative;margin-bottom: 30px;">
-        <nav class="navbar navbar-expand-md sticky-top bg-body d-flex flex-row justify-content-between align-items-center align-content-center align-self-center" id="mainNavbar" style="box-shadow: 0px 3px 10px 0px;background: rgba(255,255,255,0.1)!important;opacity: 1;/*filter: blur(0px);*/backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);width: 1111.8px;border-radius: 29px;margin-top: 10px;margin-bottom: 10px;padding-right: 8px;padding-left: 8px;position: fixed;">
+<body style="background: #ffffff;overflow-x: hidden; overflow-y: auto;cursor: copy;" data-bs-spy="scroll">
+    <div class="d-flex justify-content-center" style="position: relative;margin-bottom: 30px;max-width: 100%;width: auto;">
+        <nav class="navbar navbar-expand-md sticky-top bg-body position-fixed d-flex w-auto flex-row justify-content-between align-items-center align-content-center align-self-center" id="mainNavbar" style="background: rgba(255,255,255,0.1)!important;opacity: 1;/*filter: blur(0px);*/backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);width: 100%;border-radius: 29px;margin-top: 10px;margin-bottom: auto;padding-right: 8px;padding-left: 8px;position: fixed;box-shadow: 0px 2px 6px 0px;max-width: 1200px;">
             <div class="container"><a class="navbar-brand fst-italic text-center" href="#" style="font-family: Nasalization;font-size: 15px;"><strong>Ankomah </strong>Aidoo</a><button data-bs-toggle="collapse" class="navbar-toggler text-center" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse text-center d-flex justify-content-end ms-0" id="navcol-1" style="width: 847.8px;font-family: Inter, sans-serif;">
+                <div class="collapse navbar-collapse text-center d-flex justify-content-end p-1 ms-0" id="navcol-1" style="width: 847.8px;font-family: Inter, sans-serif;">
                     <ul class="navbar-nav d-flex align-self-start gap-3 me-10 pe-4" style="font-family: Inter, sans-serif;font-size: 13px;color: rgb(98,116,142);">
                         <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills &amp; tools</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul><a class="btn btn-primary btn-sm p-2 ms-4 me-0 pt-2" role="button" style="background: rgb(0,0,0);border-radius: 6px;padding: 8px;width: 97.2px;height: 39.8px;border-style: none;" href="https://drive.google.com/uc?export=download&amp;id=1IrFz5YmvNoPSMZgDaROx8hpwcOVlYsS0">Resume&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                    </ul><a class="btn btn-primary btn-sm p-2 ms-4 me-0 pt-2" role="button" style="background: rgb(0,0,0);border-radius: 6px;padding: 8px;width: 97.2px;height: 39.8px;border-style: none;" href="https://drive.google.com/file/d/1IrFz5YmvNoPSMZgDaROx8hpwcOVlYsS0/view?usp=drive_link" target="_blank">Resume&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
                             <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg></a>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="container pt-5 mb-0 pb-0" style="margin: auto;overflow: visible;margin-top: 26px;padding-bottom: 37px;">
-        <div class="row gy-4 gy-md-0">
+    <div class="container w-auto pt-5 mb-0 pb-0" style="margin: auto;overflow: visible;margin-top: 26px;padding-bottom: 37px;width: auto;max-width: 100%;">
+        <div class="row gy-4 gy-md-0" style="width: inherit;">
             <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
                 <div class="ps-0 me-0 pe-0" style="max-width: 444px;width: 465px;">
                     <h2 class="fw-bold pe-0" style="font-family: Nasalization;font-weight: bold;width: 447px;">Hi, I'm<br>Nathaniel Ankomah Aidoo</h2>
@@ -67,13 +68,13 @@
             </div>
         </div>
     </div>
-    <div class="mt-4 pt-6 mb-4 pb-6" id="about" style="background: #f7f9fc;">
-        <h2 class="ps-4" style="font-family: Nasalization;margin-left: 50px;font-weight: bold;">About Me</h2>
+    <div class="w-100 mt-5 pt-6 mb-0 pb-6" id="about" style="background: #f7f9fc;width: inherit;max-width: none;">
+        <h2 class="ps-4" style="font-family: Nasalization;margin-left: 50px;font-weight: bold;width: inherit;">About Me</h2>
         <div class="d-flex justify-content-start">
             <p class="ms-5 ps-4 me-1 pe-3 mt-0 pt-0 mb-0 pb-3" style="font-family: Inter, sans-serif;width: 843.8px;text-align: left;">I’m a Full-stack developer and cybersecurity enthusiast dedicated to building secure, efficient, and user-centered digital solutions. I love exploring how technology can make systems smarter and safer.<br>When I’m not coding or learning new tech concepts, I enjoy singing, reading, and watching documentaries and interviews on technology, which keep me inspired and current.</p>
-            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex justify-content-evenly ms-0 me-0 mt-0" style="width: 1114.1px;">
-                <div class="col mt-0" style="width: 219.1px;">
-                    <div class="card" style="width: 234.7px;">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex w-100 justify-content-evenly ms-0 me-0 mt-0">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-0">
+                    <div class="card" style="width: 230.4px;">
                         <div class="card-body ps-4 pe-4 pt-4 pb-3" style="width: 239.1px;height: 321.6px;">
                             <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center mb-3 d-inline-block bs-icon" style="background: rgb(0,0,0);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
@@ -84,8 +85,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-0">
-                    <div class="card" style="width: 234.7px;">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-0">
+                    <div class="card" style="width: 230.4px;">
                         <div class="card-body p-4" style="width: 239.1px;padding: 24px 24px 16px;">
                             <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center mb-3 d-inline-block bs-icon" style="background: rgb(0,0,0);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
@@ -99,110 +100,38 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex flex-column mt-1 pt-0 pb-4 mx-6 py-xl-5" id="projects">
-        <div class="row mb-3">
-            <div class="col">
-                <h2 class="mb-0" style="font-family: Nasalization;font-weight: bold;">Selected Projects</h2>
-            </div>
-        </div>
-        <div class="row gy-1 row-cols-1 row-cols-md-2 row-cols-xl-3 mt-0 pt-0">
-            <div class="col">
-                <div class="card hover-card"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-30%20113314.png">
-                    <div class="card-body p-4">
-                        <div class="d-flex flex-wrap gap-2 mb-2">
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">React Native</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">FastAPI</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">Beautiful Soup</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">LangChain</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">Postgresql</p>
-                        </div>
-                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">KNUST Students' Pal</h4>
-                        <p class="card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A modern user-centric landing page for a technology startup.</p>
-                        <div class="d-flex justify-content-between gap-3 mt-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 29px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;" href="https://github.com/Nathaniel47/KNUST-Students-Pal" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card hover-card" style="height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-27%20173746.png">
-                    <div class="card-body p-4 mb-0">
-                        <div class="d-flex flex-wrap gap-2 mb-2">
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">JavaScript</p>
-                        </div>
-                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">Dioko Technologies</h4>
-                        <p class="card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A modern user-centric landing page for a technology startup.</p>
-                        <div class="d-flex justify-content-between gap-3 mt-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 29px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;" href="https://github.com/Nathaniel47/Landing-Page" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 28px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;" href="https://nathaniel47.github.io/Landing-Page/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
-                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card hover-card" style="height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-09%20100626.png">
-                    <div class="card-body p-4">
-                        <div class="d-flex flex-wrap gap-2 mb-2">
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">JavaScript</p>
-                        </div>
-                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">Manaroma Flip Game</h4>
-                        <p class="card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A patttern arrangement gaming website.</p>
-                        <div class="d-flex justify-content-between gap-3 mt-3 pt-3 mb-1"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 29px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;" href="https://github.com/Nathaniel47/Flip-game-app" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 28px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;" href="https://nathaniel47.github.io/Flip-game-app/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
-                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style="box-shadow: 0px 0px;">
-                <div class="card mt-4 hover-card" style="border-top: 0.9px none rgba(112,115,118,0.37);height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block mt-0 pt-0" style="height: 200px;" src="assets/img/Screenshot%202025-10-09%20100727.png">
-                    <div class="card-body p-4" style="border-radius: 8px;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-width: 0.7px;border-style: none;border-top-color: rgba(112,115,118,0.37);border-right-style: none;border-right-color: rgba(112,115,118,0.37);border-bottom-style: none;border-bottom-color: rgba(112,115,118,0.37);border-left-style: none;border-left-color: rgba(112,115,118,0.37);">
-                        <div class="d-flex flex-wrap gap-2 mb-2">
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
-                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
-                        </div>
-                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">PokéMon Go UI</h4>
-                        <p class="card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A PokéMon Go UI landing page.</p>
-                        <div class="d-flex justify-content-between gap-3 mt-3 pt-3 mb-1"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 29px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;" href="https://github.com/Nathaniel47/Pokemon-Game-Shop" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 28px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;" href="https://nathaniel47.github.io/Pokemon-Game-Shop/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
-                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container min-vw-100 ms-0 ps-6 me-0 pe-0 mt-0 pt-6 mb-0 pb-6" id="skills" style="background: #f7f9fc;">
-        <h2 class="ms-3 pt-4 mb-0" id="projects-1" style="font-family: Nasalization;font-weight: bold;">My Stack</h2>
-        <div class="d-flex flex-row justify-content-start align-items-center gap-5 ps-0 mb-6" data-aos="slide-up" data-aos-duration="500">
+    <div class="container w-auto min-vw-100 ms-0 ps-6 me-0 pe-0 mt-0 pt-5 mb-0 pb-2" id="skills" style="background: #ffffff;width: initial;max-width: none;">
+        <h2 class="w-auto ms-3 pt-4 mb-0" id="projects-1" style="font-family: Nasalization;font-weight: bold;width: inherit;">My Stack</h2>
+        <div class="d-flex flex-row justify-content-start align-items-center gap-5 ps-0 mb-6" data-aos="slide-up" data-aos-duration="500" style="width: inherit;">
             <h3 class="fw-bolder ms-4 mb-0" id="projects-4" style="font-family: sans-serif;font-weight: bold;font-size: 27px;letter-spacing: 0px;">FRONTEND</h3>
             <div class="d-flex align-items-center flex-wrap gap-4 ms-9">
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/React-icon.svg.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/React-icon.svg.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">React</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/JavaScript-logo.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/JavaScript-logo.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">JavaScript</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/htmlof.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/htmlof.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">HTML</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1100" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/css3.svg" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1100" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/css3.svg" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">CSS</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1300" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/Bootstrap_logo.svg.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1300" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/Bootstrap_logo.svg.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">CSS</h4>
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-row justify-content-start align-items-center gap-5 ms-0 ps-0 mb-6" data-aos="slide-up" data-aos-duration="500">
+        <div class="d-flex flex-row justify-content-start align-items-center gap-5 ms-0 ps-0 mb-6" data-aos="slide-up" data-aos-duration="500" style="width: inherit;">
             <h3 class="fw-bolder ms-4 ps-0 me-0 mb-0" id="projects-3" style="font-family: sans-serif;font-weight: bold;font-size: 27px;letter-spacing: 0px;">BACKEND</h3>
             <div class="d-flex align-items-center flex-wrap gap-4 ms-9 ps-2">
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/nodejs.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/nodejs.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">Node.Js</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/fastapi.svg" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/fastapi.svg" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">FastAPI</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/python-logo-only.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/python-logo-only.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">Python</h4>
                 </div>
             </div>
@@ -210,10 +139,10 @@
         <div class="d-flex flex-row justify-content-start align-items-center gap-5 ms-0 mb-6" data-aos="slide-up" data-aos-duration="500">
             <h3 class="fw-bolder ms-4 mb-0" id="projects-2" style="font-family: sans-serif;font-weight: bold;font-size: 27px;letter-spacing: 0px;">DATABASE</h3>
             <div class="d-flex align-items-center flex-wrap gap-4 ms-8 ps-0">
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/MYSQL.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/MYSQL.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">MySQL</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/Postgresql_elephant.svg" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/Postgresql_elephant.svg" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">PostgreSQL</h4>
                 </div>
             </div>
@@ -221,16 +150,16 @@
         <div class="d-flex flex-row justify-content-start align-items-center gap-5 ms-0 mb-6" data-aos="slide-up" data-aos-duration="500">
             <h3 class="fw-bolder ms-4 mb-0" id="projects-5" style="font-family: sans-serif;font-weight: bold;font-size: 27px;letter-spacing: 0px;">TOOLS</h3>
             <div class="d-flex align-items-center flex-wrap gap-4 ms-9 ps-5">
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/Git-Icon-1788C.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/Git-Icon-1788C.png" width="46" height="46">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">Git</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/GitHub-Mark-ea2971cee799.png" width="46" height="46" style="background: #f7f9fc;">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/GitHub-Mark-ea2971cee799.png" width="46" height="46" style="background: #f7f9fc;">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">GitHub</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/Amazon_Web_Services_Logo.svg.png" width="48" height="29">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="900" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/Amazon_Web_Services_Logo.svg.png" width="48" height="29">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">AWS</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1100" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block" src="assets/img/wordpress-logo-image-png-701751694773680sodsik7zlf.png" width="46" height="46">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="1100" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block" src="assets/img/wordpress-logo-image-png-701751694773680sodsik7zlf.png" width="46" height="46" style="background: #ffffff;">
                     <h4 class="ms-2 mb-0 pb-0" style="font-size: 21px;">WordPress</h4>
                 </div>
             </div>
@@ -238,17 +167,17 @@
         <div class="d-flex flex-row justify-content-start align-items-center gap-5 ms-0 mb-6" data-aos="slide-up" data-aos-duration="500">
             <h3 class="fw-bolder ms-4 mb-0" id="projects-6" style="font-family: sans-serif;font-weight: bold;font-size: 27px;letter-spacing: 0px;">DOCUMENT</h3>
             <div class="d-flex align-items-center flex-wrap gap-4 ms-7 ps-0">
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block pe-0" src="assets/img/Microsoft-Office-365-Emblem.png" width="93" height="39" style="background: #f7f9fc;width: 96.8px !important;">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="500" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block pe-0" src="assets/img/Microsoft-Office-365-Emblem.png" width="93" height="39" style="background: #ffffff;width: 96.8px !important;">
                     <h4 class="ms-0 pe-0 mb-0 pb-0" style="font-size: 21px;width: 155.8px;">Microsoft Office</h4>
                 </div>
-                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #f7f9fc;"><img class="card-img-top w-100 d-block pe-0" src="assets/img/wps-office.svg" width="112" height="31" style="background: #f7f9fc;width: 68.1px !important;">
+                <div class="card d-flex flex-row justify-content-center align-items-center" data-aos="slide-up" data-aos-duration="700" style="border-style: none;border-top-style: none;background: #ffffff;"><img class="card-img-top w-100 d-block pe-0" src="assets/img/wps-office.svg" width="112" height="31" style="background: #ffffff;width: 68.1px !important;">
                     <h4 class="ms-0 pe-0 mb-0 pb-0" style="font-size: 21px;width: 114.8px;">WPS</h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="ms-0 ps-6 me-0 pe-0 mt-0 pt-6 mb-0 pb-6" id="experience" style="border-width: 0.1px;">
-        <h2 class="mb-4" style="font-family: Nasalization;font-weight: bold;">My Experience</h2>
+    <div class="w-auto ms-0 ps-6 me-0 pe-0 mt-5 pt-6 mb-3 pb-6" id="experience" style="border-width: 0.1px;background: #f7f9fc;width: inherit;">
+        <h2 class="w-50 mb-4" style="font-family: Nasalization;font-weight: bold;">My Experience</h2>
         <div class="d-flex flex-column justify-content-evenly gap-4">
             <div class="w-75 ms-0 ps-3 pe-3 pt-3 pb-3 hover-card" data-aos="slide-up" data-aos-duration="500" style="border: 0.7px solid var(--bs-secondary);border-radius: 8px;backdrop-filter: blur(0px);-webkit-backdrop-filter: blur(0px);">
                 <h4>AWS Certified Cloud Practioner Trainee</h4>
@@ -330,7 +259,78 @@
             </div>
         </div>
     </div>
-    <section class="position-relative py-4 py-xl-5">
+    <div class="container d-flex w-auto flex-column mt-1 pt-0 mb-6 pb-4 mx-6 py-xl-5" id="projects" style="width: inherit;">
+        <div class="row mb-3">
+            <div class="col">
+                <h2 class="mb-0" style="font-family: Nasalization;font-weight: bold;">Selected Projects</h2>
+            </div>
+        </div>
+        <div class="row gy-1 row-cols-1 row-cols-md-2 row-cols-xl-3 mt-0 pt-0">
+            <div class="col">
+                <div class="card hover-card"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-30%20113314.png">
+                    <div class="card-body p-4">
+                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">KNUST Students' Pal</h4>
+                        <p class="mb-2 card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">An intelligent mobile assistant for KNUST students with a chatbot, scheduler, updates, scholarships hub, and course materials download.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <p class="d-flex justify-content-center mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">React Native</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">Beautiful Soup</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">FastAPI</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">LangChain</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">Postgresql</p>
+                        </div>
+                        <div class="d-flex justify-content-between gap-3 mt-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 6px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;width: 139.5px;" href="https://github.com/Nathaniel47/KNUST-Students-Pal" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hover-card" style="height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-09%20100626.png">
+                    <div class="card-body p-4">
+                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">Manaroma Flip Game</h4>
+                        <p class="mb-4 pb-2 card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A responsive memory card flip game with a clean, user-friendly interface, clear instructions, and interactive card-flipping functionality for an engaging user experience.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-0 pt-2 mb-2 pb-0">
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">JavaScript</p>
+                        </div>
+                        <div class="d-flex justify-content-between gap-3 mt-0 pt-0 mb-0 pb-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 6px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;width: 144.5px;" href="https://github.com/Nathaniel47/Flip-game-app" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 6px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;width: 144.5px;" href="https://nathaniel47.github.io/Flip-game-app/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
+                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hover-card" style="height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block" style="height: 200px;" src="assets/img/Screenshot%202025-10-27%20173746.png">
+                    <div class="card-body p-4 mb-0">
+                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">Dioko Technologies</h4>
+                        <p class="mb-6 pb-2 card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A modern user-centric landing page for a technology startup.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
+                        </div>
+                        <div class="d-flex justify-content-between gap-3 ms-0 mt-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 6px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;width: 144.5px;" href="https://github.com/Nathaniel47/Landing-Page" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 6px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;width: 144.5px;" href="https://nathaniel47.github.io/Landing-Page/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
+                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="box-shadow: 0px 0px;">
+                <div class="card mt-4 hover-card" style="border-top: 0.9px none rgba(112,115,118,0.37);height: 463.2px;"><img class="object-fit-cover card-img-top w-100 d-block mt-0 pt-0" style="height: 200px;" src="assets/img/Screenshot%202025-10-09%20100727.png">
+                    <div class="card-body p-4" style="border-radius: 8px;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-width: 0.7px;border-style: none;border-top-color: rgba(112,115,118,0.37);border-right-style: none;border-right-color: rgba(112,115,118,0.37);border-bottom-style: none;border-bottom-color: rgba(112,115,118,0.37);border-left-style: none;border-left-color: rgba(112,115,118,0.37);">
+                        <h4 class="card-title" style="font-family: Nasalization;font-size: 18px;font-weight: bold;">PokéMon Go UI</h4>
+                        <p class="mb-7 card-text" style="font-family: Inter, sans-serif;font-size: 13px;color: #62748e;">A PokéMon Go UI landing page.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.4) ;">HTML5</p>
+                            <p class="mb-0" style="font-family: 'Cutive Mono', monospace;padding: 5px;background: #f1f5f9;font-size: 12px;color: rgb(0,0,0);line-height: 15px;padding-right: 10px;padding-left: 10px;border-radius: 12px;padding-bottom: 2px;border: 0.7px solid rgba(0,0,0,0.40) ;">CSS3</p>
+                        </div>
+                        <div class="d-flex justify-content-between gap-3 mt-0 pt-0 mb-0"><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;background: rgb(255,255,255);border-radius: 6px;color: rgb(0,0,0);border: 0.9px solid rgb(0,0,0);padding-top: 5px;padding-bottom: 5px;padding-right: 25px;padding-left: 25px;width: 144.5px;" href="https://github.com/Nathaniel47/Pokemon-Game-Shop" target="_blank" rel="noopener">Code<i class="icon ion-social-github ms-2" style="font-size: 16px;"></i></a><a class="btn btn-primary" role="button" style="font-family: 'Cutive Mono', monospace;color: rgb(255,255,255);background: #000000;text-align: center;border-style: solid;border-top-style: solid;border-top-color: rgb(6,6,6);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-style: solid;border-bottom-color: rgb(3,3,3);border-left-style: solid;border-left-color: rgb(11,11,11);border-radius: 6px;padding-bottom: 5px;padding-top: 5px;padding-left: 25px;padding-right: 25px;width: 144.5px;" href="https://nathaniel47.github.io/Pokemon-Game-Shop/" target="_blank" rel="noopener">Demo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="ms-2" style="color: #ffffff;border-color: rgba(255,255,255,0);">
+                                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="position-relative w-auto py-4 py-xl-5" style="background: #f7f9fc;width: auto;">
         <div class="container position-relative">
             <div class="row d-flex justify-content-start ms-0 mb-0">
                 <div class="col-md-8 col-xl-6 text-center d-flex flex-column align-items-start ms-0 ps-0 mx-auto" id="contact">
@@ -392,7 +392,7 @@
             </div>
         </div>
     </section>
-    <footer class="text-center bg-body d-flex pe-0 pt-0 mb-0 pb-0" style="color: rgb(0,0,0);background: rgb(8,8,8);width: 100%;max-width: none;">
+    <footer class="text-center bg-body d-flex w-auto pe-0 pt-0 mb-0 pb-0" style="color: rgb(0,0,0);background: rgb(8,8,8);width: inherit;max-width: none;">
         <div class="container-fluid ps-0 me-0 pe-0 py-3" style="background: #040404;color: rgb(255,255,255);margin-left: 0px;width: 100%;max-width: none;">
             <div class="row row-cols-1 row-cols-lg-3 me-0">
                 <div class="col ps-0" style="color: rgb(255, 255, 255);">
