@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.e47e1a46.css",
-    "main.js": "/static/js/main.d0b5ae86.js",
+    "main.css": "/static/css/main.c1acb466.css",
+    "main.js": "/static/js/main.2a172676.js",
+    "static/media/on-device-mosquito-identification.md": "/static/media/on-device-mosquito-identification.f3f46b51413ac9274da3.md",
+    "static/media/grounded-campus-assistant.md": "/static/media/grounded-campus-assistant.24aa0c5a8c0bab29f9bb.md",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.e47e1a46.css",
-    "static/js/main.d0b5ae86.js"
+    "static/css/main.c1acb466.css",
+    "static/js/main.2a172676.js"
   ]
 }
