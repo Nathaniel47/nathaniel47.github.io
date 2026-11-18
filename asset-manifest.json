@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.fc62b70d.css",
-    "main.js": "/static/js/main.ac2df478.js",
-    "static/media/on-device-mosquito-identification.md": "/static/media/on-device-mosquito-identification.f3f46b51413ac9274da3.md",
-    "static/media/grounded-campus-assistant.md": "/static/media/grounded-campus-assistant.24aa0c5a8c0bab29f9bb.md",
+    "main.js": "/static/js/main.c7e89cba.js",
+    "static/media/agentguard-defending-tool-using-agents.md": "/static/media/agentguard-defending-tool-using-agents.9f564cc64694bff2c950.md",
+    "static/media/on-device-mosquito-identification.md": "/static/media/on-device-mosquito-identification.6be4f46daa339c929049.md",
+    "static/media/grounded-campus-assistant.md": "/static/media/grounded-campus-assistant.8b2e8923bb37cbf29993.md",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.fc62b70d.css",
-    "static/js/main.ac2df478.js"
+    "static/js/main.c7e89cba.js"
   ]
 }
