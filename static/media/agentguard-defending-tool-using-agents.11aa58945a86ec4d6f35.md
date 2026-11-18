@@ -40,7 +40,7 @@ The most useful lesson was about the harness itself. My first real-model run loo
 
 I'm interested in **the security and reliable evaluation of LLM agents and their memory**, and would be glad to discuss these questions with researchers working on agent safety, adversarial robustness or evaluation methodology.
 
-The code, data and run records are on [GitHub](https://github.com/Nathaniel47/agentguard), including a limitations file that lists where the results are weak.
+You can try to break the agent yourself in the [live arena](https://agentguard-9q9m.onrender.com) (it runs on a free tier, so allow up to a minute for the first load). The code, data and run records are on [GitHub](https://github.com/Nathaniel47/agentguard), including a limitations file that lists where the results are weak.
 
 ## References
 
