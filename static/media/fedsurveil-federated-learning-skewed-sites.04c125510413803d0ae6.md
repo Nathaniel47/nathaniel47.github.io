@@ -35,7 +35,7 @@ Then I ran the same settings on three more datasets. These are accuracies at alp
 - **FedProx did not clearly help either.** With mu 0.1 it averaged below FedAvg on OrganAMNIST and PathMNIST. On IP102 the seeds showed no clear difference.
 - **IP102 was hard for federated training in general.** Even near-identical sites reached 47.0%, against 57.7% for central training. I did not test whether more rounds would close that gap.
 
-**This does not show that SCAFFOLD is worse than FedAvg.** I did not investigate the failures, and there are obvious suspects. The settings were chosen on one dataset. SCAFFOLD's formula is also derived for plain SGD, while I used momentum and adjusted the step size in the formula to approximate it. In a one-site test my SCAFFOLD matches FedAvg exactly, as the maths says it should, but that test does not check the approximation across several sites. What the results do show is that a gain measured on one dataset, with one set of settings, was not enough to rely on.
+**This does not show that SCAFFOLD is worse than FedAvg.** I did not investigate the failures, and there are obvious suspects. The settings were chosen on one dataset. SCAFFOLD's formula is also derived for plain SGD, while I used momentum and adjusted the step size in the formula to approximate it. I have a one-site test in which SCAFFOLD matches FedAvg exactly, but it does not check this approximation at all: it runs without momentum, and with one site the correction is always zero. I also never compared SCAFFOLD without momentum, so the approximation could affect the BloodMNIST gain too. What the results do show is that a gain measured on one dataset, with one set of settings, was not enough to rely on.
 
 ## What privacy cost
 
