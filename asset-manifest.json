@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e593b14a.css",
-    "main.js": "/static/js/main.06cbe76e.js",
-    "static/media/swarmshield-prompt-infection-memory-poisoning.md": "/static/media/swarmshield-prompt-infection-memory-poisoning.a10ec0f6f89e746149a3.md",
-    "static/media/secure-tinyml-quantized-attacks-defenses.md": "/static/media/secure-tinyml-quantized-attacks-defenses.b81a3f2d41dfc59c4e10.md",
+    "main.css": "/static/css/main.dca17c81.css",
+    "main.js": "/static/js/main.5ca42c07.js",
+    "static/media/fedsurveil-federated-learning-skewed-sites.md": "/static/media/fedsurveil-federated-learning-skewed-sites.778d7e1a0e5c4704cec8.md",
+    "static/media/swarmshield-prompt-infection-memory-poisoning.md": "/static/media/swarmshield-prompt-infection-memory-poisoning.8718c98f817f3d949008.md",
+    "static/media/secure-tinyml-quantized-attacks-defenses.md": "/static/media/secure-tinyml-quantized-attacks-defenses.b3772f20a9f29c6ecd50.md",
     "static/media/securerag-poisoning-injection-leakage.md": "/static/media/securerag-poisoning-injection-leakage.6b4274a1bbe1e2b55e5c.md",
-    "static/media/autopentest-copilot-lab-only-pentest-agent.md": "/static/media/autopentest-copilot-lab-only-pentest-agent.f0e8fb1dee0777d9c548.md",
     "static/media/agentguard-defending-tool-using-agents.md": "/static/media/agentguard-defending-tool-using-agents.11aa58945a86ec4d6f35.md",
+    "static/media/autopentest-copilot-lab-only-pentest-agent.md": "/static/media/autopentest-copilot-lab-only-pentest-agent.cf1a351db54dd1803289.md",
     "static/media/on-device-mosquito-identification.md": "/static/media/on-device-mosquito-identification.6be4f46daa339c929049.md",
     "static/media/grounded-campus-assistant.md": "/static/media/grounded-campus-assistant.8b2e8923bb37cbf29993.md",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.e593b14a.css",
-    "static/js/main.06cbe76e.js"
+    "static/css/main.dca17c81.css",
+    "static/js/main.5ca42c07.js"
   ]
 }
